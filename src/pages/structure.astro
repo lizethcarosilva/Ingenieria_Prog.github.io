@@ -1,0 +1,224 @@
+---
+// src/pages/about.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <div class="bg-gradient-to-r  from-blue-400 to-blue-900 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold mb-6">Estructura Organizacional</h1>
+      <p class="text-xl max-w-3xl mx-auto">
+        Conoce nuestra estructura jerárquica y áreas funcionales
+      </p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 py-16">
+    
+    <!-- Organigrama Visual -->
+    <div class="bg-white rounded-2xl shadow-xl p-8 mb-16">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Organigrama</h2>
+      <p class="text-center text-gray-600 mb-8">IngenieriaProg - Tecnología Desarrollo Software</p>
+      
+      <!-- Imagen del Organigrama -->
+      <div class="text-center">
+        <img 
+          src="/struture.png" 
+          alt="Organigrama jerárquico de IngenieriaProg mostrando Gerente General, Subgerente, Jefes de Área y equipo operativo" 
+          class="w-full h-auto max-w-4xl mx-auto rounded-lg shadow-lg border border-gray-200"
+          onerror="this.style.display='none'"
+        />
+        <p class="text-gray-500 mt-4 text-sm">
+          Estructura organizacional de IngenieriaProg
+        </p>
+      </div>
+
+      <!-- Si la imagen no carga, muestra un mensaje -->
+      <div id="fallback-message" class="hidden text-center mt-4">
+        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+          <p class="text-yellow-800">La imagen del organigrama no está disponible temporalmente.</p>
+        </div>
+      </div>
+    </div>
+      <!-- Estructura Jerárquica en Texto -->
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Nivel Directivo -->
+        <div class="bg-blue-50 rounded-xl p-6">
+          <h3 class="text-xl font-bold text-blue-800 mb-4 text-center">🎯 Nivel Directivo</h3>
+          <div class="space-y-4">
+            <div class="bg-white rounded-lg p-4 shadow-sm border-l-4 border-blue-500">
+              <h4 class="font-bold text-gray-800">Gerente General</h4>
+              <p class="text-sm text-gray-600">Dirección estratégica y toma de decisiones</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 shadow-sm border-l-4 border-blue-400">
+              <h4 class="font-bold text-gray-800">Subgerente</h4>
+              <p class="text-sm text-gray-600">Apoyo en gestión operativa y estratégica</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nivel Gerencial -->
+        <div class="bg-green-50 rounded-xl p-6">
+          <h3 class="text-xl font-bold text-green-800 mb-4 text-center">👥 Nivel Gerencial</h3>
+          <div class="space-y-3">
+            <div class="bg-white rounded-lg p-3 shadow-sm border-l-4 border-green-500">
+              <h4 class="font-semibold text-gray-800">Jefe de Recursos Humanos</h4>
+            </div>
+            <div class="bg-white rounded-lg p-3 shadow-sm border-l-4 border-green-500">
+              <h4 class="font-semibold text-gray-800">Jefe de Ventas/Mercadeo</h4>
+            </div>
+            <div class="bg-white rounded-lg p-3 shadow-sm border-l-4 border-green-500">
+              <h4 class="font-semibold text-gray-800">Jefe Contable/Financiero</h4>
+            </div>
+            <div class="bg-white rounded-lg p-3 shadow-sm border-l-4 border-green-500">
+              <h4 class="font-semibold text-gray-800">Jefe de Operaciones y Tecnología</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nivel Operativo -->
+      <div class="bg-purple-50 rounded-xl p-6 mt-6">
+        <h3 class="text-xl font-bold text-purple-800 mb-4 text-center">💼 Nivel Operativo</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- RRHH -->
+          <div class="bg-white rounded-lg p-4 shadow-sm">
+            <h4 class="font-semibold text-gray-800 mb-2">Recursos Humanos</h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Auxiliar Administrativo</li>
+            </ul>
+          </div>
+
+          <!-- Ventas/Mercadeo -->
+          <div class="bg-white rounded-lg p-4 shadow-sm">
+            <h4 class="font-semibold text-gray-800 mb-2">Ventas/Mercadeo</h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Promotor</li>
+              <li>• Promotor</li>
+              <li>• Marketing</li>
+            </ul>
+          </div>
+
+          <!-- Contable/Financiero -->
+          <div class="bg-white rounded-lg p-4 shadow-sm">
+            <h4 class="font-semibold text-gray-800 mb-2">Contable/Financiero</h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Auxiliar Contable</li>
+            </ul>
+          </div>
+
+          <!-- Operaciones/Tecnología -->
+          <div class="bg-white rounded-lg p-4 shadow-sm">
+            <h4 class="font-semibold text-gray-800 mb-2">Operaciones y Tecnología</h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Desarrollador Back End</li>
+              <li>• Desarrollador Front End</li>
+              <li>• Diseñador UX/UI</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Áreas Funcionales Detalladas -->
+    <div class="space-y-8">
+      
+      <!-- Recursos Humanos -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-blue-500">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">👥 Área de Recursos Humanos</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Esta área se encarga de la gestión integral del talento humano de IngenieríaProg, 
+          ocupándose de todos los procesos relacionados con el capital humano de la organización.
+        </p>
+        <div class="bg-blue-50 rounded-lg p-4">
+          <h4 class="font-semibold text-blue-800 mb-2">Funciones Principales:</h4>
+          <ul class="text-gray-600 space-y-1 text-sm">
+            <li>• Reclutamiento y selección de personal técnico y administrativo</li>
+            <li>• Procesos de inducción y capacitación continua</li>
+            <li>• Evaluaciones periódicas de desempeño</li>
+            <li>• Programas de bienestar laboral</li>
+            <li>• Cumplimiento de normativa laboral vigente</li>
+            <li>• Gestión de nómina y prestaciones sociales</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Ventas/Mercadeo -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-500">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">📈 Área de Ventas / Mercadeo</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Esta área se encarga de todo el proceso comercial de IngenieríaProg, desde atraer 
+          clientes hasta cerrar negocios y mantenerlos satisfechos.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-green-50 rounded-lg p-4">
+            <h4 class="font-semibold text-green-800 mb-2">Ventas:</h4>
+            <ul class="text-gray-600 space-y-1 text-sm">
+              <li>• Prospección de clientes</li>
+              <li>• Negociación de contratos</li>
+              <li>• Presentación de propuestas</li>
+              <li>• Seguimiento postventa</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 rounded-lg p-4">
+            <h4 class="font-semibold text-green-800 mb-2">Mercadeo:</h4>
+            <ul class="text-gray-600 space-y-1 text-sm">
+              <li>• Investigación de competencia</li>
+              <li>• Marketing digital en redes sociales</li>
+              <li>• Manejo de identidad corporativa</li>
+              <li>• Creación de contenido</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contable/Financiera -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-purple-500">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">💰 Área Contable / Financiera</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Administra todos los recursos económicos de la empresa, asegurando que haya dinero 
+          suficiente para operar y que se cumplan las obligaciones legales y tributarias.
+        </p>
+        <div class="bg-purple-50 rounded-lg p-4">
+          <h4 class="font-semibold text-purple-800 mb-2">Funciones Principales:</h4>
+          <ul class="text-gray-600 space-y-1 text-sm">
+            <li>• Contabilidad general y estados financieros</li>
+            <li>• Control de presupuesto y flujo de caja</li>
+            <li>• Gestión de facturación y cobro</li>
+            <li>• Análisis de rentabilidad de proyectos</li>
+            <li>• Planificación tributaria (DIAN)</li>
+            <li>• Control de costos y gastos</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Operaciones y Tecnología -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-orange-500">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">🚀 Área de Operaciones y Tecnología</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Representa el corazón operativo de IngenieríaProg, donde se materializa la propuesta 
+          de valor mediante la creación de soluciones tecnológicas innovadoras y personalizadas.
+        </p>
+        <div class="bg-orange-50 rounded-lg p-4">
+          <h4 class="font-semibold text-orange-800 mb-2">Funciones Principales:</h4>
+          <ul class="text-gray-600 space-y-1 text-sm">
+            <li>• Levantamiento de requerimientos</li>
+            <li>• Diseño y desarrollo de software escalable</li>
+            <li>• Integración de componentes</li>
+            <li>• Pruebas de calidad</li>
+            <li>• Despliegue en ambientes productivos</li>
+            <li>• Documentación técnica</li>
+            <li>• Investigación de nuevas tecnologías</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</Layout>

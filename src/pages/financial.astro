@@ -1,0 +1,1064 @@
+---
+// src/pages/financial.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <div class="bg-gradient-to-r  from-blue-400 to-blue-900 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold mb-6">Estados Financieros</h1>
+      <p class="text-xl max-w-3xl mx-auto">
+        Información financiera completa de IngenieriaProg - Análisis y balances al 31 de agosto de 2025
+      </p>
+    </div>
+  </div>
+
+  <!-- Carrusel Financiero -->
+  <div class="container mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Reportes Financieros</h2>
+    
+    <!-- Controles del Carrusel -->
+    <div class="flex justify-center mb-8 space-x-4 flex-wrap gap-2">
+      <button class="carousel-btn active bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-300" data-target="balance-general">
+        Balance General
+      </button>
+      <button class="carousel-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-target="analisis-vertical">
+        Análisis Vertical y Diagnostico Financiero del BG
+      </button>
+      <button class="carousel-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-target="estado-resultados">
+        Estado de Resultados
+      </button>
+      <button class="carousel-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-target="analisis-resultados">
+        Análisis Vertical Estado
+      </button>
+    </div>
+
+    <!-- Contenido del Carrusel -->
+    <div class="carousel-content">
+      
+      <!-- Balance General -->
+      <div id="balance-general" class="carousel-item active">
+        <!-- Botón para ver Balance General -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Balance General - 31 de Agosto 2025</h3>
+          <p class="text-gray-600 mb-6">Consulta el balance general completo de IngenieriaProg</p>
+          
+          <button 
+            id="balanceButton"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg flex items-center justify-center mx-auto space-x-3"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <span>Ver Balance General Completo</span>
+          </button>
+        </div>
+
+        <!-- Modal para Balance General -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4">
+          <div class="bg-white rounded-lg w-full max-w-6xl max-h-[95vh] overflow-auto relative">
+            <!-- Header del Modal con Botón Cerrar -->
+            <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10">
+              <h3 class="text-2xl font-bold text-gray-800">Balance General - IngenieriaProg</h3>
+              <button 
+                id="closeModal"
+                class="text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-2 transition duration-200"
+              >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            
+            <!-- Contenido del Modal -->
+            <div class="p-6">
+              <img 
+                src="/balance.png" 
+                alt="Balance General de IngenieriaProg" 
+                class="w-full h-auto rounded-lg border border-gray-200"
+              />
+              
+              <!-- Información adicional -->
+              <div class="mt-6 bg-gray-50 rounded-lg p-4">
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Información del Reporte</h4>
+                <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                  <div>
+                    <span class="font-medium">Fecha:</span> 31 de Agosto 2025
+                  </div>
+                  <div>
+                    <span class="font-medium">Moneda:</span> Pesos Colombianos (COP)
+                  </div>
+                  <div>
+                    <span class="font-medium">Empresa:</span> IngenieriaProg SAS
+                  </div>
+                  <div>
+                    <span class="font-medium">Estado:</span> Consolidado
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notas Resumidas a los Estados Financieros - TODAS LAS 17 NOTAS -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">NOTAS RESUMIDAS A LOS ESTADOS FINANCIEROS</h3>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            
+            <!-- Columna 1 -->
+            <div class="space-y-6">
+              <!-- Nota 1 -->
+              <div class="bg-blue-50 rounded-xl p-4 border-l-4 border-blue-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">💰 Caja General</h4>
+                <p class="text-gray-600 text-sm">$20.835.000 - Efectivo disponible para operaciones diarias y emergencias.</p>
+              </div>
+
+              <!-- Nota 2 -->
+              <div class="bg-green-50 rounded-xl p-4 border-l-4 border-green-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">🏦 Bancos</h4>
+                <p class="text-gray-600 text-sm">$96.930.000 - Cuenta Banco Caja Social para liquidez inmediata.</p>
+              </div>
+
+              <!-- Nota 3 -->
+              <div class="bg-purple-50 rounded-xl p-4 border-l-4 border-purple-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">👥 Cuentas por Cobrar</h4>
+                <p class="text-gray-600 text-sm">$2.000.000 - Préstamo a empleado Luis García, recuperable en 4 meses.</p>
+              </div>
+
+              <!-- Nota 4 -->
+              <div class="bg-orange-50 rounded-xl p-4 border-l-4 border-orange-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">📝 Contratos en Ejecución</h4>
+                <p class="text-gray-600 text-sm">$33.650.000 - 3 proyectos activos de desarrollo tecnológico.</p>
+              </div>
+
+              <!-- Nota 5 -->
+              <div class="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">🪑 Muebles y Enseres</h4>
+                <p class="text-gray-600 text-sm">$6.500.000 - Mobiliario de oficina en Ibagué.</p>
+              </div>
+
+              <!-- Nota 6 -->
+              <div class="bg-indigo-50 rounded-xl p-4 border-l-4 border-indigo-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">💻 Equipos de Computación</h4>
+                <p class="text-gray-600 text-sm">$15.000.000 - Equipos tecnológicos para desarrollo de software.</p>
+              </div>
+
+              <!-- Nota 7 -->
+              <div class="bg-teal-50 rounded-xl p-4 border-l-4 border-teal-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">📄 Derechos de Software</h4>
+                <p class="text-gray-600 text-sm">$5.500.000 - Licencias de Visual Paradigm, IntelliJ, Office 365 y SQL Server.</p>
+              </div>
+
+              <!-- Nota 8 -->
+              <div class="bg-pink-50 rounded-xl p-4 border-l-4 border-pink-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">🚗 Flota de Transporte</h4>
+                <p class="text-gray-600 text-sm">$15.000.000 - Chevrolet Spark Go para transporte del personal.</p>
+              </div>
+
+              <!-- Nota 9 -->
+              <div class="bg-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">📊 Obligaciones Financieras</h4>
+                <p class="text-gray-600 text-sm">$10.000.000 - Pagaré con Banco Caja Social para proyectos tecnológicos.</p>
+              </div>
+
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="space-y-6">
+              <!-- Nota 10 -->
+              <div class="bg-lime-50 rounded-xl p-4 border-l-4 border-lime-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">🏢 Proveedores Nacionales</h4>
+                <p class="text-gray-600 text-sm">$27.000.000 - Compromisos con proveedores de mobiliario, equipos y software.</p>
+              </div>
+
+              <!-- Nota 11 -->
+              <div class="bg-amber-50 rounded-xl p-4 border-l-4 border-amber-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">⚡ Servicios Públicos</h4>
+                <p class="text-gray-600 text-sm">$835.000 - Energía, internet y acueducto pendientes de pago.</p>
+              </div>
+
+              <!-- Nota 12 -->
+              <div class="bg-emerald-50 rounded-xl p-4 border-l-4 border-emerald-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">🏢 Arrendamientos</h4>
+                <p class="text-gray-600 text-sm">$1.130.000 - Canon de arrendamiento de oficinas en Ibagué.</p>
+              </div>
+
+              <!-- Nota 13 -->
+              <div class="bg-rose-50 rounded-xl p-4 border-l-4 border-rose-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">👨‍💼 Salarios por Pagar</h4>
+                <p class="text-gray-600 text-sm">$33.650.000 - Nómina mensual de 15 empleados.</p>
+              </div>
+
+              <!-- Nota 14 -->
+              <div class="bg-violet-50 rounded-xl p-4 border-l-4 border-violet-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">🔧 Mantenimiento Oficina</h4>
+                <p class="text-gray-600 text-sm">$1.300.000 - Provisión para reparaciones y mejoras de sede.</p>
+              </div>
+
+              <!-- Nota 15 -->
+              <div class="bg-fuchsia-50 rounded-xl p-4 border-l-4 border-fuchsia-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">🤝 Operación Conjunta</h4>
+                <p class="text-gray-600 text-sm">$1.500.000 - Costo compartido con socio TechSolutions S.A.S.</p>
+              </div>
+
+              <!-- Nota 16 -->
+              <div class="bg-sky-50 rounded-xl p-4 border-l-4 border-sky-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">💼 Capital Social</h4>
+                <p class="text-gray-600 text-sm">$90.000.000 - Capital aportado por los socios fundadores.</p>
+              </div>
+
+              <!-- Nota 17 -->
+              <div class="bg-cyan-50 rounded-xl p-4 border-l-4 border-cyan-500">
+                <h4 class="text-lg font-bold text-gray-800 mb-2">📈 Resultados Acumulados</h4>
+                <p class="text-gray-600 text-sm">$30.000.000 - Utilidades de ejercicios anteriores no distribuidas.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Resumen Financiero -->
+          <div class="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200">
+            <h4 class="text-xl font-bold text-gray-800 mb-4 text-center">📈 Resumen Financiero</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <div>
+                <div class="text-2xl font-bold text-green-600">$195.4M</div>
+                <div class="text-sm text-gray-600">Activos Totales</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-red-600">$75.4M</div>
+                <div class="text-sm text-gray-600">Pasivos Totales</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-blue-600">$120.0M</div>
+                <div class="text-sm text-gray-600">Patrimonio</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-purple-600">61.4%</div>
+                <div class="text-sm text-gray-600">Relación Patrimonial</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<div id="analisis-vertical" class="carousel-item hidden">
+
+  <!-- Botón para ver Análisis Vertical -->
+  <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center">
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">Análisis Vertical de Balance General - 31 de Agosto 2025</h3>
+    <p class="text-gray-600 mb-6">Consulta el Análisis vertical completo de IngenieriaProg</p>
+    
+    <button 
+      id="avButton"  
+      class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg flex items-center justify-center mx-auto space-x-3"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+      </svg>
+      <span>Ver Análisis vertical de BG Completo</span>
+    </button>
+  </div>
+
+  <!-- Modal específico para Análisis Vertical -->
+  <div id="avModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4"> 
+    <div class="bg-white rounded-lg w-full max-w-6xl max-h-[95vh] overflow-auto relative">
+      <!-- Header del Modal con Botón Cerrar -->
+      <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10">
+        <h3 class="text-2xl font-bold text-gray-800">Análisis vertical de Balance General - IngenieriaProg</h3>
+        <button 
+          id="closeAvModal" 
+          class="text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-2 transition duration-200"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Contenido del Modal -->
+      <div class="p-6">
+        <img 
+          src="/balanceav.png" 
+          alt="Análisis vertical de Balance General de IngenieriaProg" 
+          class="w-full h-auto rounded-lg border border-gray-200"
+        />
+        
+        <!-- Información adicional -->
+        <div class="mt-6 bg-gray-50 rounded-lg p-4">
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Información del Reporte</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+            <div>
+              <span class="font-medium">Fecha:</span> 31 de Agosto 2025
+            </div>
+            <div>
+              <span class="font-medium">Moneda:</span> Pesos Colombianos (COP)
+            </div>
+            <div>
+              <span class="font-medium">Empresa:</span> IngenieriaProg SAS
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-xl p-8">
+    <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Análisis Vertical y Diagnóstico Financiero del Balance General</h3>
+    
+    <!-- Resumen Ejecutivo -->
+    <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-200 mb-8">
+      <h4 class="text-xl font-bold text-gray-800 mb-4 text-center">📊 Panorama Financiero General</h4>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <div class="text-2xl font-bold text-green-600">78.5%</div>
+          <div class="text-sm text-gray-600">Activos de Corto Plazo</div>
+          <div class="text-xs text-green-500 mt-1">Disponibilidad Inmediata</div>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <div class="text-2xl font-bold text-blue-600">61.4%</div>
+          <div class="text-sm text-gray-600">Recursos Propios</div>
+          <div class="text-xs text-blue-500 mt-1">Autofinanciamiento</div>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <div class="text-2xl font-bold text-purple-600">37.2%</div>
+          <div class="text-sm text-gray-600">Obligaciones Inmediatas</div>
+          <div class="text-xs text-purple-500 mt-1">Compromisos a 1 año</div>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow-sm">
+          <div class="text-2xl font-bold text-orange-600">60.3%</div>
+          <div class="text-sm text-gray-600">Disponible Efectivo</div>
+          <div class="text-xs text-orange-500 mt-1">Efectivo + Bancos</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Puntos Positivos -->
+    <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500 mb-8">
+      <h4 class="text-xl font-bold text-gray-800 mb-4">💪 Aspectos Favorables</h4>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Reserva Monetaria Amplia</span>
+              <p class="text-gray-600 text-sm mt-1">Cuentas bancarias y caja suman $117.7 millones, representando el 60.3% del total de activos</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Proyectos en Marcha Garantizados</span>
+              <p class="text-gray-600 text-sm mt-1">Contratos por $33.6 millones aseguran flujo de ingresos futuro</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Estructura de Capital Robusta</span>
+              <p class="text-gray-600 text-sm mt-1">Capital social de $90 millones proporciona base sólida</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Deuda Financiera Mínima</span>
+              <p class="text-gray-600 text-sm mt-1">Solo $10 millones en obligaciones con entidades financieras</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Ganancias Retenidas Significativas</span>
+              <p class="text-gray-600 text-sm mt-1">$30 millones en resultados acumulados muestran rentabilidad histórica</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Infraestructura Tecnológica Adecuada</span>
+              <p class="text-gray-600 text-sm mt-1">Equipos de computación por $15 millones para operaciones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Consideraciones a Evaluar -->
+    <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500 mb-8">
+      <h4 class="text-xl font-bold text-gray-800 mb-4">🔍 Aspectos por Optimizar</h4>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">⚡</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Recursos Monetarios Ociosos</span>
+              <p class="text-gray-600 text-sm mt-1">Fondos disponibles podrían destinarse a inversiones productivas</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">⚡</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Distribución de Activos Fijos</span>
+              <p class="text-gray-600 text-sm mt-1">Vehículo representa misma inversión que equipos tecnológicos</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">⚡</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Oportunidades de Crecimiento</span>
+              <p class="text-gray-600 text-sm mt-1">Capacidad para asumir proyectos más ambiciosos</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">⚡</span>
+            <div>
+              <span class="text-gray-700 font-semibold">Estrategia de Reinversión</span>
+              <p class="text-gray-600 text-sm mt-1">Ganancias acumuladas podrían impulsar expansión</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicadores Clave de Desempeño -->
+    <!-- Carrusel de Indicadores -->
+    <div class="indicadores-carousel mb-8">
+      <!-- Controles del Carrusel -->
+      <div class="flex justify-center mb-6 space-x-4">
+        <button class="categoria-btn active bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-300" data-categoria="liquidez">
+          Liquidez
+        </button>
+        <button class="categoria-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-categoria="endeudamiento">
+          Endeudamiento
+        </button>
+      </div>
+
+      <!-- Contenido del Carrusel -->
+      <div class="categorias-content">
+        
+        <!-- Categoría Liquidez -->
+        <div id="liquidez" class="categoria-item active">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Fondo de Maniobra -->
+            <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-bold text-gray-800">Fondo de Maniobra</h4>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Excelente</span>
+              </div>
+              <div class="text-3xl font-bold text-green-600 mb-2">$80.8M</div>
+              <div class="text-sm text-gray-600 mb-4">
+                <div class="font-medium">Fórmula:</div>
+                <div>Activo Corriente - Pasivo Corriente</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border">
+                <div class="text-sm text-gray-700">
+                  <strong>Interpretación:</strong> Equilibrio financiero - La empresa tiene capacidad para operar normalmente
+                </div>
+              </div>
+            </div>
+
+            <!-- Razón Corriente -->
+            <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-bold text-gray-800">Razón Corriente</h4>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Óptimo</span>
+              </div>
+              <div class="text-3xl font-bold text-blue-600 mb-2">2.11</div>
+              <div class="text-sm text-gray-600 mb-4">
+                <div class="font-medium">Fórmula:</div>
+                <div>Activo Corriente / Pasivo Corriente</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border">
+                <div class="text-sm text-gray-700">
+                  <strong>Interpretación:</strong> Excelente capacidad para cumplir con obligaciones a corto plazo
+                </div>
+              </div>
+            </div>
+
+            <!-- Prueba Ácida -->
+            <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-bold text-gray-800">Prueba Ácida</h4>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Excelente</span>
+              </div>
+              <div class="text-3xl font-bold text-purple-600 mb-2">2.11</div>
+              <div class="text-sm text-gray-600 mb-4">
+                <div class="font-medium">Fórmula:</div>
+                <div>(Activo Corriente - Inventario) / Pasivo Corriente</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border">
+                <div class="text-sm text-gray-700">
+                  <strong>Interpretación:</strong> Excelente capacidad para cumplir obligaciones sin depender de inventarios
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Categoría Endeudamiento -->
+        <div id="endeudamiento" class="categoria-item hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            
+            <!-- Endeudamiento Total -->
+            <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-bold text-gray-800">Endeudamiento Total</h4>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Conservador</span>
+              </div>
+              <div class="text-3xl font-bold text-orange-600 mb-2">38.6%</div>
+              <div class="text-sm text-gray-600 mb-4">
+                <div class="font-medium">Fórmula:</div>
+                <div>(Pasivo Total / Activo Total) × 100</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border">
+                <div class="text-sm text-gray-700">
+                  <strong>Interpretación:</strong> Nivel conservador - Las deudas no superan los activos
+                </div>
+              </div>
+            </div>
+
+            <!-- Endeudamiento Corto Plazo -->
+            <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 border border-red-200 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-bold text-gray-800">Endeudamiento Corto Plazo</h4>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">Moderado</span>
+              </div>
+              <div class="text-3xl font-bold text-red-600 mb-2">60.5%</div>
+              <div class="text-sm text-gray-600 mb-4">
+                <div class="font-medium">Fórmula:</div>
+                <div>(Pasivo Corriente / Patrimonio) × 100</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border">
+                <div class="text-sm text-gray-700">
+                  <strong>Interpretación:</strong> Alto poder de negociación a corto plazo
+                </div>
+              </div>
+            </div>
+
+            <!-- Endeudamiento Largo Plazo -->
+            <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 border border-teal-200 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-bold text-gray-800">Endeudamiento Largo Plazo</h4>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Excelente</span>
+              </div>
+              <div class="text-3xl font-bold text-teal-600 mb-2">0.023</div>
+              <div class="text-sm text-gray-600 mb-4">
+                <div class="font-medium">Fórmula:</div>
+                <div>Pasivo No Corriente / Patrimonio</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border">
+                <div class="text-sm text-gray-700">
+                  <strong>Interpretación:</strong> Excelente solvencia a largo plazo
+                </div>
+              </div>
+            </div>
+
+            <!-- Apalancamiento Total -->
+            <div class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-6 border border-cyan-200 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-bold text-gray-800">Apalancamiento Total</h4>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Favorable</span>
+              </div>
+              <div class="text-3xl font-bold text-cyan-600 mb-2">0.63</div>
+              <div class="text-sm text-gray-600 mb-4">
+                <div class="font-medium">Fórmula:</div>
+                <div>Pasivo Total / Patrimonio</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border">
+                <div class="text-sm text-gray-700">
+                  <strong>Interpretación:</strong> Capacidad de cobertura de obligaciones con terceros
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Estrategias Sugeridas -->
+    <div class="bg-yellow-50 rounded-xl p-6 border-l-4 border-yellow-500 mb-8">
+      <h4 class="text-xl font-bold text-gray-800 mb-4">🚀 Plan de Acción Recomendado</h4>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h5 class="font-semibold text-gray-700 mb-3">Acciones Inmediatas (Próximos 3 meses)</h5>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2 mt-1">•</span>
+              <span>Destinar parte del efectivo a desarrollo de nuevos productos</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2 mt-1">•</span>
+              <span>Evaluar reemplazo del vehículo por activos más productivos</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2 mt-1">•</span>
+              <span>Establecer fondo para investigación y desarrollo tecnológico</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-gray-700 mb-3">Estrategias Mediano Plazo (3-12 meses)</h5>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2 mt-1">•</span>
+              <span>Explorar financiamiento para proyectos de expansión</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2 mt-1">•</span>
+              <span>Invertir en capacitación del equipo humano</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-yellow-500 mr-2 mt-1">•</span>
+              <span>Desarrollar líneas de productos con ingresos recurrentes</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conclusión General -->
+    <div class="text-center bg-gradient-to-r from-green-100 to-blue-100 rounded-xl p-6">
+      <div class="inline-flex items-center bg-white text-green-800 px-6 py-3 rounded-full mb-3 shadow-sm">
+        <span class="text-2xl mr-2">🏆</span>
+        <span class="text-lg font-bold">SITUACIÓN FINANCIERA DESTACADA</span>
+      </div>
+      <p class="text-gray-700 max-w-2xl mx-auto font-medium">
+        La empresa demuestra solidez financiera excepcional con amplia capacidad de maniobra. 
+        El desafío principal consiste en transformar la estabilidad actual en crecimiento acelerado 
+        mediante inversiones estratégicas que maximicen el retorno sobre los recursos disponibles.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div id="estado-resultados" class="carousel-item hidden">
+  
+  <!-- Botón para ver Estado de Resultados -->
+  <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center">
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">Estado de Resultados - 31 de Agosto 2025</h3>
+    <p class="text-gray-600 mb-6">Consulta el Estado de Resultados completo de IngenieriaProg</p>
+    
+    <button 
+      id="erButton"
+      class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg flex items-center justify-center mx-auto space-x-3"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+      </svg>
+      <span>Ver Estado de Resultados Completo</span>
+    </button>
+  </div>
+
+  <!-- Modal específico para Estado de Resultados -->
+  <div id="erModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg w-full max-w-6xl max-h-[95vh] overflow-auto relative">
+      <!-- Header del Modal con Botón Cerrar -->
+      <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10">
+        <h3 class="text-2xl font-bold text-gray-800">Estado de Resultados - IngenieriaProg</h3>
+        <button 
+          id="closeErModal"
+          class="text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-2 transition duration-200"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Contenido del Modal -->
+      <div class="p-6">
+        <img 
+          src="/estadoresul.png" 
+          alt="Estado de Resultados de IngenieriaProg" 
+          class="w-full h-auto rounded-lg border border-gray-200"
+        />
+        
+        <!-- Información adicional -->
+        <div class="mt-6 bg-gray-50 rounded-lg p-4">
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Información del Reporte</h4>
+          <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+            <div>
+              <span class="font-medium">Fecha:</span> 31 de Agosto 2025
+            </div>
+            <div>
+              <span class="font-medium">Moneda:</span> Pesos Colombianos (COP)
+            </div>
+            <div>
+              <span class="font-medium">Empresa:</span> IngenieriaProg SAS
+            </div>
+            <div>
+              <span class="font-medium">Estado:</span> Consolidado
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resto del contenido del Estado de Resultados... -->
+  <div class="bg-white rounded-2xl shadow-xl p-8">
+    <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">NOTAS RESUMIDAS - ESTADO DE RESULTADOS</h3>
+    
+    <div class="grid md:grid-cols-2 gap-6">
+      
+      <!-- Columna 1 -->
+      <div class="space-y-6">
+        <!-- Nota 1 -->
+        <div class="bg-green-50 rounded-xl p-4 border-l-4 border-green-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">💰 Ingresos Operacionales</h4>
+          <p class="text-gray-600 text-sm">$180.000.000 - Contratos de desarrollo de software con Grupo Empresarial Andino S.A.S.</p>
+        </div>
+
+        <!-- Nota 2 -->
+        <div class="bg-red-50 rounded-xl p-4 border-l-4 border-red-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">💸 Costos de Ventas</h4>
+          <p class="text-gray-600 text-sm">$65.000.000 - Salarios equipo desarrollo, licencias y servidores en la nube</p>
+        </div>
+
+        <!-- Nota 3 -->
+        <div class="bg-orange-50 rounded-xl p-4 border-l-4 border-orange-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">🏢 Gastos Administración</h4>
+          <p class="text-gray-600 text-sm">$22.000.000 - Salarios administrativos, arrendamiento y servicios públicos</p>
+        </div>
+
+        <!-- Nota 4 -->
+        <div class="bg-purple-50 rounded-xl p-4 border-l-4 border-purple-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">📊 Gastos Ventas y Mercadeo</h4>
+          <p class="text-gray-600 text-sm">$12.500.000 - Publicidad digital, material promocional y comisiones</p>
+        </div>
+
+        <!-- Nota 5 -->
+        <div class="bg-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">🏦 Gastos Financieros</h4>
+          <p class="text-gray-600 text-sm">$3.200.000 - Intereses por pagarés y comisiones bancarias</p>
+        </div>
+
+        <!-- Nota 6 -->
+        <div class="bg-teal-50 rounded-xl p-4 border-l-4 border-teal-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">🎯 Otros Ingresos</h4>
+          <p class="text-gray-600 text-sm">$4.500.000 - Capacitaciones e intereses ganados en cuentas</p>
+        </div>
+
+        <!-- Nota 7 -->
+        <div class="bg-blue-50 rounded-xl p-4 border-l-4 border-blue-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">📝 Impuesto de Renta</h4>
+          <p class="text-gray-600 text-sm">$31.437.000 - Calculado sobre utilidad antes de impuestos (35%)</p>
+        </div>
+
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="space-y-6">
+        <!-- Nota 8 -->
+        <div class="bg-indigo-50 rounded-xl p-4 border-l-4 border-indigo-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">🔧 Ingresos por Soporte</h4>
+          <p class="text-gray-600 text-sm">$15.000.000 - Contratos de mantenimiento con clientes existentes</p>
+        </div>
+
+        <!-- Nota 9 -->
+        <div class="bg-pink-50 rounded-xl p-4 border-l-4 border-pink-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">📈 Ingresos Diferidos</h4>
+          <p class="text-gray-600 text-sm">$7.120.000 - Entrega parcial contrato página web Ferretería El Progreso</p>
+        </div>
+
+        <!-- Nota 10 -->
+        <div class="bg-lime-50 rounded-xl p-4 border-l-4 border-lime-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">🔬 Investigación y Desarrollo</h4>
+          <p class="text-gray-600 text-sm">$5.500.000 - IA para chatbots e integración plataformas de pago</p>
+        </div>
+
+        <!-- Nota 11 -->
+        <div class="bg-amber-50 rounded-xl p-4 border-l-4 border-amber-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">🎓 Gastos de Capacitación</h4>
+          <p class="text-gray-600 text-sm">$2.800.000 - Cursos AWS Cloud Computing y Scrum Master</p>
+        </div>
+
+        <!-- Nota 12 -->
+        <div class="bg-emerald-50 rounded-xl p-4 border-l-4 border-emerald-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">⚖️ Gastos Legales</h4>
+          <p class="text-gray-600 text-sm">$3.600.000 - Auditoría externa y asesoría jurídica</p>
+        </div>
+
+        <!-- Nota 13 -->
+        <div class="bg-rose-50 rounded-xl p-4 border-l-4 border-rose-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">📉 Depreciaciones</h4>
+          <p class="text-gray-600 text-sm">$4.200.000 - Equipos cómputo, mobiliario y licencias software</p>
+        </div>
+
+        <!-- Nota 14 -->
+        <div class="bg-violet-50 rounded-xl p-4 border-l-4 border-violet-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">🎁 Ingresos Extraordinarios</h4>
+          <p class="text-gray-600 text-sm">$2.000.000 - Venta equipos cómputo antiguos</p>
+        </div>
+
+        <!-- Nota 15 -->
+        <div class="bg-cyan-50 rounded-xl p-4 border-l-4 border-cyan-500">
+          <h4 class="text-lg font-bold text-gray-800 mb-2">📊 Resultado Integral</h4>
+          <p class="text-gray-600 text-sm">$5.838.300 - Reserva legal del 10% sobre utilidad líquida</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Resumen de Rentabilidad -->
+    <div class="mt-8 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
+      <h4 class="text-xl font-bold text-gray-800 mb-4 text-center">📈 Resumen de Rentabilidad</h4>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div>
+          <div class="text-2xl font-bold text-green-600">$208.6M</div>
+          <div class="text-sm text-gray-600">Ingresos Totales</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-blue-600">$93.0M</div>
+          <div class="text-sm text-gray-600">Utilidad Operativa</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-purple-600">$58.4M</div>
+          <div class="text-sm text-gray-600">Utilidad Líquida</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-orange-600">$52.5M</div>
+          <div class="text-sm text-gray-600">Utilidad Neta</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Análisis de Rentabilidad -->
+    <div class="mt-8 bg-white rounded-xl p-6 border border-gray-200">
+      <h4 class="text-xl font-bold text-gray-800 mb-4 text-center">📊 Análisis de Rentabilidad</h4>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-600">44.6%</div>
+          <div class="text-sm text-gray-600">Margen Operativo</div>
+          <div class="text-xs text-gray-500">(Utilidad Operativa / Ingresos)</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-600">28.0%</div>
+          <div class="text-sm text-gray-600">Margen Neto</div>
+          <div class="text-xs text-gray-500">(Utilidad Neta / Ingresos)</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-purple-600">71.0%</div>
+          <div class="text-sm text-gray-600">Margen Bruto</div>
+          <div class="text-xs text-gray-500">(Utilidad Bruta / Ingresos)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="analisis-resultados" class="carousel-item hidden">
+        <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
+          <h3 class="text-3xl font-bold text-gray-800 mb-4">Análisis Vertical Estado de Resultados</h3>
+          <p class="text-gray-600">Contenido en desarrollo...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script>
+  // Funciones para los modales
+  function openModal(modalId:any) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal(modalId:any) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  // Event Listeners después de que el DOM esté cargado
+  document.addEventListener('DOMContentLoaded', function() {
+    // Botones para abrir modales
+    const balanceButton = document.getElementById('balanceButton');
+    const avButton = document.getElementById('avButton');
+    const erButton = document.getElementById('erButton');
+    
+    if (balanceButton) {
+      balanceButton.addEventListener('click', () => openModal('imageModal'));
+    }
+    
+    if (avButton) {
+      avButton.addEventListener('click', () => openModal('avModal'));
+    }
+    
+    if (erButton) {
+      erButton.addEventListener('click', () => openModal('erModal'));
+    }
+
+    // Botones para cerrar modales
+    const closeModalBtn = document.getElementById('closeModal');
+    const closeAvModalBtn = document.getElementById('closeAvModal');
+    const closeErModalBtn = document.getElementById('closeErModal');
+    
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', () => closeModal('imageModal'));
+    }
+    
+    if (closeAvModalBtn) {
+      closeAvModalBtn.addEventListener('click', () => closeModal('avModal'));
+    }
+    
+    if (closeErModalBtn) {
+      closeErModalBtn.addEventListener('click', () => closeModal('erModal'));
+    }
+
+    // Cerrar modales con ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal('imageModal');
+        closeModal('avModal');
+        closeModal('erModal');
+      }
+    });
+
+    // Cerrar modales haciendo clic fuera del contenido
+    const imageModal = document.getElementById('imageModal');
+    const avModal = document.getElementById('avModal');
+    const erModal = document.getElementById('erModal');
+    
+    if (imageModal) {
+      imageModal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal('imageModal');
+        }
+      });
+    }
+    
+    if (avModal) {
+      avModal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal('avModal');
+        }
+      });
+    }
+    
+    if (erModal) {
+      erModal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal('erModal');
+        }
+      });
+    }
+
+    // Funcionalidad del carrusel principal
+    const buttons = document.querySelectorAll('.carousel-btn');
+    const items = document.querySelectorAll('.carousel-item');
+    
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        const clickedButton = event.currentTarget;
+        if (!clickedButton) return;
+        
+        const target = (clickedButton as HTMLElement).getAttribute('data-target');
+        if (!target) return;
+        
+        // Remover active de todos los botones e items
+        buttons.forEach(function(btn) {
+          btn.classList.remove('active', 'bg-blue-600', 'text-white');
+          btn.classList.add('bg-gray-300', 'text-gray-700');
+        });
+        
+        items.forEach(function(item) {
+          item.classList.add('hidden');
+          item.classList.remove('active');
+        });
+        
+        // Agregar active al botón e item seleccionado
+        (clickedButton as HTMLElement).classList.remove('bg-gray-300', 'text-gray-700');
+        (clickedButton as HTMLElement).classList.add('active', 'bg-blue-600', 'text-white');
+        
+        const targetElement = document.getElementById(target);
+        if (targetElement) {
+          targetElement.classList.remove('hidden');
+          targetElement.classList.add('active');
+        }
+      });
+    });
+
+    // Funcionalidad para el carrusel de categorías (indicadores)
+    const categoriaButtons = document.querySelectorAll('.categoria-btn');
+    const categoriaItems = document.querySelectorAll('.categoria-item');
+    
+    categoriaButtons.forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        const clickedButton = event.currentTarget;
+        if (!clickedButton) return;
+        
+        const targetCategoria = (clickedButton as HTMLElement).getAttribute('data-categoria');
+        
+        // Remover active de todos los botones
+        categoriaButtons.forEach(btn => {
+          btn.classList.remove('active', 'bg-blue-600', 'text-white');
+          btn.classList.add('bg-gray-300', 'text-gray-700');
+        });
+        
+        // Ocultar todos los items
+        categoriaItems.forEach(item => {
+          item.classList.add('hidden');
+          item.classList.remove('active');
+        });
+        
+        // Activar botón e item seleccionado
+        (clickedButton as HTMLElement).classList.remove('bg-gray-300', 'text-gray-700');
+        (clickedButton as HTMLElement).classList.add('active', 'bg-blue-600', 'text-white');
+        
+        if (targetCategoria) {
+          const targetElement = document.getElementById(targetCategoria);
+          if (targetElement) {
+            targetElement.classList.remove('hidden');
+            targetElement.classList.add('active');
+          }
+        }
+      });
+    });
+  });
+</script>
+
+
+  <style>
+    .carousel-item {
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .carousel-item.active {
+      display: block;
+    }
+    
+    .carousel-item.hidden {
+      display: none;
+    }
+    
+    .carousel-btn.active {
+      background-color: #2563eb;
+      color: white;
+    }
+    
+    .carousel-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    #imageModal {
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</Layout>
