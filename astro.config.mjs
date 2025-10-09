@@ -6,6 +6,6 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://lizethcarosilva.github.io',
-  //base: '/',
+  base: '/Ingenieria_Prog.github.io',
   integrations: [tailwind()]
 });

@@ -4,6 +4,7 @@ import background from '../assets/background.svg';
 import "../styles/global.css"
 
 const nameCompany = 'IngenieriaProg';
+const base = import.meta.env.BASE_URL;
 ---
 
 <!-- Fondo con blur -->
@@ -28,11 +29,11 @@ const nameCompany = 'IngenieriaProg';
       </p>
       
       <div class="flex gap-4 justify-center flex-wrap">
-        <a href="/about" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold text-lg">
+        <a href={`${base}/about`} class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold text-lg">
           Conoce Más
         </a>
         <a 
-          href="/contact" 
+          href={`${base}/contact`}
           class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold text-lg">
          
           Contactanos

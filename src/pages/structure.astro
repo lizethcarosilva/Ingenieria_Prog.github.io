@@ -1,6 +1,8 @@
 ---
 // src/pages/about.astro
 import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -24,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Imagen del Organigrama -->
       <div class="text-center">
         <img 
-          src="/struture.png" 
+          src={`${base}/struture.png`}
           alt="Organigrama jerárquico de IngenieriaProg mostrando Gerente General, Subgerente, Jefes de Área y equipo operativo" 
           class="w-full h-auto max-w-4xl mx-auto rounded-lg shadow-lg border border-gray-200"
           onerror="this.style.display='none'"
