@@ -1,0 +1,55 @@
+---
+// src/components/IndicatorCarousel.astro
+
+export interface Indicator {
+  name: string;
+  value: string;
+  interpretation: string;
+  category: 'efficiency' | 'profitability';
+  icon?: string;
+}
+
+interface Props {
+  indicators: Indicator[];
+  title: string;
+  description: string;
+  bgColorClass: string;
+  textColorClass: string;
+  borderColorClass: string;
+}
+
+const { indicators, title, description, bgColorClass, textColorClass, borderColorClass } = Astro.props;
+---
+
+<div class={`py-12 px-6 rounded-2xl shadow-lg mb-8 ${bgColorClass} ${textColorClass} border-l-4 ${borderColorClass}`}>
+  <h3 class="text-3xl font-bold text-center mb-4">{title}</h3>
+  <p class="text-lg text-center mb-8 max-w-2xl mx-auto opacity-90">{description}</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    {indicators.map((indicator) => (
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
+        <div class="text-center">
+          <h4 class="text-lg font-bold text-gray-800 mb-3">{indicator.name}</h4>
+          <div class={`text-3xl font-bold mb-4 ${indicator.category === 'efficiency' ? 'text-blue-600' : 'text-orange-600'}`}>
+            {indicator.value}
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed text-left">{indicator.interpretation}</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center">
+          {indicator.category === 'efficiency' ? 'Gestión o Eficiencia' : 'Rentabilidad'}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .indicator-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .indicator-card:hover {
+    transform: translateY(-5px);
+  }
+</style>
+
