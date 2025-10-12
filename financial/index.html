@@ -1,0 +1,370 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.14.1"><title>IngenieriaProg</title><!-- Enable View Transitions --><link rel="stylesheet" href="/Ingenieria_Prog.github.io/_astro/about.DwlgRFy7.css">
+<style>.carousel-item[data-astro-cid-zv66lnlj]{transition:all .3s ease-in-out}.carousel-item[data-astro-cid-zv66lnlj].active{display:block}.carousel-item[data-astro-cid-zv66lnlj].hidden{display:none}.carousel-btn[data-astro-cid-zv66lnlj].active{background-color:#2563eb;color:#fff}.carousel-btn[data-astro-cid-zv66lnlj]:hover{transform:translateY(-2px)}#imageModal[data-astro-cid-zv66lnlj]{backdrop-filter:blur(4px)}.indicador-item[data-astro-cid-zv66lnlj]{transition:all .3s ease-in-out}.indicador-item[data-astro-cid-zv66lnlj].active{display:block}.indicador-item[data-astro-cid-zv66lnlj].hidden{display:none}.indicador-btn[data-astro-cid-zv66lnlj].active{background-color:#2563eb;color:#fff}.indicador-btn[data-astro-cid-zv66lnlj]:hover{transform:translateY(-2px)}
+</style></head><astro:head> <meta name="view-transition" content="same-origin"> </astro:head> <!-- Fondo con blur --> <div class="fixed top-0 left-0 w-[250px] h-full -z-10 filter blur-lg opacity-60 bg-cover" style="background: url('{background}');"></div> <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl shadow-lg border-b border-gray-200"> <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto"> <div class="flex items-start gap-3"> <img src="/Ingenieria_Prog.github.io/IngenieriaProg.png" alt="Logo de IngenieriaProg" class="w-[200px] h-auto object-contain"> </div> <nav class="flex items-center gap-8"> <a href="/Ingenieria_Prog.github.io/" class="text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 no-underline">
+Home
+</a> <a href="/Ingenieria_Prog.github.io/about" class="text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 no-underline">
+About Us
+</a> <a href="/Ingenieria_Prog.github.io/structure" class="text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 no-underline">
+Hierarchical Structure
+</a> <a href="/Ingenieria_Prog.github.io/financial" class="text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 no-underline">
+Financial Component
+</a> <a href="/Ingenieria_Prog.github.io/conclusions" class="text-lg font-medium text-gray-700 hover:text-blue-600 transition duration-300 no-underline">
+Conclusions
+</a> </nav> </div> </header> <main class="flex-1 min-h-[calc(100vh-140px)]">   <div class="bg-gradient-to-r from-blue-400 to-blue-900 text-white py-20" data-astro-cid-zv66lnlj> <div class="container mx-auto px-6 text-center" data-astro-cid-zv66lnlj> <h1 class="text-5xl font-bold mb-6" data-astro-cid-zv66lnlj>Estados Financieros</h1> <p class="text-xl max-w-3xl mx-auto mb-6" data-astro-cid-zv66lnlj>
+Información financiera completa de IngenieriaProg - Análisis y balances
+        al 31 de agosto de 2025
+</p> <a href="/Ingenieria_Prog.github.io/Componente_Financiero.xlsx" download="Componente_Financiero_IngenieriaProg.xlsx" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg inline-flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" data-astro-cid-zv66lnlj></path> </svg> <span data-astro-cid-zv66lnlj>Descargar Excel de Estados Financieros</span> </a> </div> </div>  <div class="container mx-auto px-6 py-16" data-astro-cid-zv66lnlj> <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-astro-cid-zv66lnlj>
+Reportes Financieros
+</h2> <!-- Controles del Carrusel --> <div class="flex justify-center mb-8 space-x-4 flex-wrap gap-2" data-astro-cid-zv66lnlj> <button class="carousel-btn active bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-300" data-target="balance-general" data-astro-cid-zv66lnlj>
+Balance General
+</button> <button class="carousel-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-target="analisis-vertical" data-astro-cid-zv66lnlj>
+Análisis Vertical y Diagnostico Financiero del BG
+</button> <button class="carousel-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-target="estado-resultados" data-astro-cid-zv66lnlj>
+Estado de Resultados
+</button> <button class="carousel-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-target="analisis-resultados" data-astro-cid-zv66lnlj>
+Análisis Vertical Estado
+</button> </div> <!-- Contenido del Carrusel --> <div class="carousel-content" data-astro-cid-zv66lnlj> <!-- Balance General --> <div id="balance-general" class="carousel-item active" data-astro-cid-zv66lnlj> <!-- Botón para ver Balance General --> <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+Balance General - 31 de Agosto 2025
+</h3> <p class="text-gray-600 mb-6" data-astro-cid-zv66lnlj>
+Consulta el balance general completo de IngenieriaProg
+</p> <button id="balanceButton" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg flex items-center justify-center mx-auto space-x-3" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" data-astro-cid-zv66lnlj></path> </svg> <span data-astro-cid-zv66lnlj>Ver Balance General Completo</span> </button> </div> <!-- Modal para Balance General --> <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4" data-astro-cid-zv66lnlj> <div class="bg-white rounded-lg w-full max-w-6xl max-h-[95vh] overflow-auto relative" data-astro-cid-zv66lnlj> <!-- Header del Modal con Botón Cerrar --> <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Balance General - IngenieriaProg
+</h3> <button id="closeModal" class="text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-2 transition duration-200" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-zv66lnlj></path> </svg> </button> </div> <!-- Contenido del Modal --> <div class="p-6" data-astro-cid-zv66lnlj> <img src="/Ingenieria_Prog.github.io/balance.png" alt="Balance General de IngenieriaProg" class="w-full h-auto rounded-lg border border-gray-200" data-astro-cid-zv66lnlj> <!-- Información adicional --> <div class="mt-6 bg-gray-50 rounded-lg p-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-semibold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+Información del Reporte
+</h4> <div class="grid grid-cols-2 gap-4 text-sm text-gray-600" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Fecha:</span> 31 de Agosto 2025
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Moneda:</span> Pesos Colombianos (COP)
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Empresa:</span> IngenieriaProg SAS
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Estado:</span> Consolidado
+</div> </div> </div> </div> </div> </div> <!-- Notas Resumidas a los Estados Financieros - TODAS LAS 17 NOTAS --> <div class="bg-white rounded-2xl shadow-xl p-8" data-astro-cid-zv66lnlj> <h3 class="text-3xl font-bold text-center text-gray-800 mb-8" data-astro-cid-zv66lnlj>
+NOTAS RESUMIDAS A LOS ESTADOS FINANCIEROS
+</h3> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <!-- Columna 1 --> <div class="space-y-6" data-astro-cid-zv66lnlj> <!-- Nota 1 --> <div class="bg-blue-50 rounded-xl p-4 border-l-4 border-blue-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+💰 Caja General
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$20.835.000 - Efectivo disponible para operaciones diarias y
+                  emergencias.
+</p> </div> <!-- Nota 2 --> <div class="bg-green-50 rounded-xl p-4 border-l-4 border-green-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>🏦 Bancos</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$96.930.000 - Cuenta Banco Caja Social para liquidez
+                  inmediata.
+</p> </div> <!-- Nota 3 --> <div class="bg-purple-50 rounded-xl p-4 border-l-4 border-purple-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+👥 Cuentas por Cobrar
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$2.000.000 - Préstamo a empleado Luis García, recuperable en 4
+                  meses.
+</p> </div> <!-- Nota 4 --> <div class="bg-orange-50 rounded-xl p-4 border-l-4 border-orange-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📝 Contratos en Ejecución
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$59.250.000 - 3 proyectos activos de desarrollo tecnológico.
+</p> </div> <!-- Nota 5 --> <div class="bg-red-50 rounded-xl p-4 border-l-4 border-red-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🪑 Muebles y Enseres
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$6.500.000 - Mobiliario de oficina en Ibagué.
+</p> </div> <!-- Nota 6 --> <div class="bg-indigo-50 rounded-xl p-4 border-l-4 border-indigo-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+💻 Equipos de Computación
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$15.000.000 - Equipos tecnológicos para desarrollo de
+                  software.
+</p> </div> <!-- Nota 7 --> <div class="bg-teal-50 rounded-xl p-4 border-l-4 border-teal-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📄 Derechos de Software
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$5.500.000 - Licencias de Visual Paradigm, IntelliJ, Office
+                  365 y SQL Server.
+</p> </div> <!-- Nota 8 --> <div class="bg-pink-50 rounded-xl p-4 border-l-4 border-pink-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🚗 Flota de Transporte
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$15.000.000 - Chevrolet Spark Go para transporte del personal.
+</p> </div> <!-- Nota 9 --> <div class="bg-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📊 Obligaciones Financieras
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$10.000.000 - Pagaré con Banco Caja Social para proyectos
+                  tecnológicos.
+</p> </div> </div> <!-- Columna 2 --> <div class="space-y-6" data-astro-cid-zv66lnlj> <!-- Nota 10 --> <div class="bg-lime-50 rounded-xl p-4 border-l-4 border-lime-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🏢 Proveedores Nacionales
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$27.000.000 - Compromisos con proveedores de mobiliario,
+                  equipos y software.
+</p> </div> <!-- Nota 11 --> <div class="bg-amber-50 rounded-xl p-4 border-l-4 border-amber-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+⚡ Servicios Públicos
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$835.000 - Energía, internet y acueducto pendientes de pago.
+</p> </div> <!-- Nota 12 --> <div class="bg-emerald-50 rounded-xl p-4 border-l-4 border-emerald-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🏢 Arrendamientos
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$1.130.000 - Canon de arrendamiento de oficinas en Ibagué.
+</p> </div> <!-- Nota 13 --> <div class="bg-rose-50 rounded-xl p-4 border-l-4 border-rose-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+👨‍💼 Salarios por Pagar
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$33.650.000 - Nómina mensual de 15 empleados.
+</p> </div> <!-- Nota 14 --> <div class="bg-violet-50 rounded-xl p-4 border-l-4 border-violet-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🔧 Mantenimiento Oficina
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$1.300.000 - Provisión para reparaciones y mejoras de sede.
+</p> </div> <!-- Nota 15 --> <div class="bg-fuchsia-50 rounded-xl p-4 border-l-4 border-fuchsia-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🤝 Operación Conjunta
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$27.100.000 - Costo compartido con socio TechSolutions S.A.S.
+</p> </div> <!-- Nota 16 --> <div class="bg-sky-50 rounded-xl p-4 border-l-4 border-sky-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+💼 Capital Social
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$90.000.000 - Capital aportado por los socios fundadores.
+</p> </div> <!-- Nota 17 --> <div class="bg-cyan-50 rounded-xl p-4 border-l-4 border-cyan-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📈 Resultados Acumulados
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$30.000.000 - Utilidades de ejercicios anteriores no
+                  distribuidas.
+</p> </div> </div> </div> <!-- Resumen Financiero --> <div class="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4 text-center" data-astro-cid-zv66lnlj>
+📈 Resumen Financiero
+</h4> <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-green-600" data-astro-cid-zv66lnlj>$210.015M</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Activos Totales</div> </div> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-red-600" data-astro-cid-zv66lnlj>$101.015M</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Pasivos Totales</div> </div> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-blue-600" data-astro-cid-zv66lnlj>$120.0M</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Patrimonio</div> </div> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-purple-600" data-astro-cid-zv66lnlj>54.3%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Relación Patrimonial</div> </div> </div> </div> </div> </div> <div id="analisis-vertical" class="carousel-item hidden" data-astro-cid-zv66lnlj> <!-- Botón para ver Análisis Vertical --> <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+Análisis Vertical de Balance General - 31 de Agosto 2025
+</h3> <p class="text-gray-600 mb-6" data-astro-cid-zv66lnlj>
+Consulta el Análisis vertical completo de IngenieriaProg
+</p> <button id="avButton" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg flex items-center justify-center mx-auto space-x-3" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" data-astro-cid-zv66lnlj></path> </svg> <span data-astro-cid-zv66lnlj>Ver Análisis vertical de BG Completo</span> </button> </div> <!-- Modal específico para Análisis Vertical --> <div id="avModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4" data-astro-cid-zv66lnlj> <div class="bg-white rounded-lg w-full max-w-6xl max-h-[95vh] overflow-auto relative" data-astro-cid-zv66lnlj> <!-- Header del Modal con Botón Cerrar --> <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Análisis vertical de Balance General - IngenieriaProg
+</h3> <button id="closeAvModal" class="text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-2 transition duration-200" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-zv66lnlj></path> </svg> </button> </div> <!-- Contenido del Modal --> <div class="p-6" data-astro-cid-zv66lnlj> <img src="/Ingenieria_Prog.github.io/balanceav.png" alt="Análisis vertical de Balance General de IngenieriaProg" class="w-full h-auto rounded-lg border border-gray-200" data-astro-cid-zv66lnlj> <!-- Información adicional --> <div class="mt-6 bg-gray-50 rounded-lg p-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-semibold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+Información del Reporte
+</h4> <div class="grid grid-cols-2 gap-4 text-sm text-gray-600" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Fecha:</span> 31 de Agosto 2025
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Moneda:</span> Pesos Colombianos (COP)
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Empresa:</span> IngenieriaProg SAS
+</div> </div> </div> </div> </div> </div> <div class="bg-white rounded-2xl shadow-xl p-8" data-astro-cid-zv66lnlj> <h3 class="text-3xl font-bold text-center text-gray-800 mb-8" data-astro-cid-zv66lnlj>
+Análisis Vertical y Diagnóstico Financiero del Balance General
+</h3> <!-- Resumen Ejecutivo --> <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-200 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4 text-center" data-astro-cid-zv66lnlj>
+📊 Panorama Financiero General
+</h4> <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center" data-astro-cid-zv66lnlj> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-green-600" data-astro-cid-zv66lnlj>81%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Activos de Corto Plazo</div> <div class="text-xs text-green-500 mt-1" data-astro-cid-zv66lnlj>
+Disponibilidad Inmediata
+</div> </div> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-blue-600" data-astro-cid-zv66lnlj>54.3%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Recursos Propios</div> <div class="text-xs text-blue-500 mt-1" data-astro-cid-zv66lnlj>Autofinanciamiento</div> </div> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-purple-600" data-astro-cid-zv66lnlj>32.9%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Obligaciones Inmediatas</div> <div class="text-xs text-purple-500 mt-1" data-astro-cid-zv66lnlj>
+Compromisos a 1 año
+</div> </div> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-orange-600" data-astro-cid-zv66lnlj>53.3%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Disponible Efectivo</div> <div class="text-xs text-orange-500 mt-1" data-astro-cid-zv66lnlj>
+Efectivo + Bancos
+</div> </div> </div> </div> <!-- Puntos Positivos --> <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+💪 Aspectos Favorables
+</h4> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <div class="space-y-4" data-astro-cid-zv66lnlj> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-green-500 mr-3 mt-1" data-astro-cid-zv66lnlj>✓</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Reserva Monetaria Amplia</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Cuentas bancarias y caja suman $117.7 millones,
+                      representando el 60.3% del total de activos
+</p> </div> </div> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-green-500 mr-3 mt-1" data-astro-cid-zv66lnlj>✓</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Proyectos en Marcha Garantizados</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Contratos por $59.250 millones aseguran flujo de ingresos
+                      futuro
+</p> </div> </div> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-green-500 mr-3 mt-1" data-astro-cid-zv66lnlj>✓</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Estructura de Capital Robusta</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Capital social de $90 millones proporciona base sólida
+</p> </div> </div> </div> <div class="space-y-4" data-astro-cid-zv66lnlj> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-green-500 mr-3 mt-1" data-astro-cid-zv66lnlj>✓</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Deuda Financiera Mínima</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Solo $10 millones en obligaciones con entidades
+                      financieras
+</p> </div> </div> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-green-500 mr-3 mt-1" data-astro-cid-zv66lnlj>✓</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Ganancias Retenidas Significativas</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+$30 millones en resultados acumulados muestran
+                      rentabilidad histórica
+</p> </div> </div> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-green-500 mr-3 mt-1" data-astro-cid-zv66lnlj>✓</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Infraestructura Tecnológica Adecuada</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Equipos de computación por $15 millones para operaciones
+</p> </div> </div> </div> </div> </div> <!-- Consideraciones a Evaluar --> <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+🔍 Aspectos por Optimizar
+</h4> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <div class="space-y-4" data-astro-cid-zv66lnlj> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-3 mt-1" data-astro-cid-zv66lnlj>⚡</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Recursos Monetarios Ociosos</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Fondos disponibles podrían destinarse a inversiones
+                      productivas
+</p> </div> </div> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-3 mt-1" data-astro-cid-zv66lnlj>⚡</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Distribución de Activos Fijos</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Vehículo representa misma inversión que equipos
+                      tecnológicos
+</p> </div> </div> </div> <div class="space-y-4" data-astro-cid-zv66lnlj> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-3 mt-1" data-astro-cid-zv66lnlj>⚡</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Oportunidades de Crecimiento</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Capacidad para asumir proyectos más ambiciosos
+</p> </div> </div> <div class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-3 mt-1" data-astro-cid-zv66lnlj>⚡</span> <div data-astro-cid-zv66lnlj> <span class="text-gray-700 font-semibold" data-astro-cid-zv66lnlj>Estrategia de Reinversión</span> <p class="text-gray-600 text-sm mt-1" data-astro-cid-zv66lnlj>
+Ganancias acumuladas podrían impulsar expansión
+</p> </div> </div> </div> </div> </div> <!-- Indicadores Clave de Desempeño --> <!-- Carrusel de Indicadores --> <div class="indicadores-carousel mb-8" data-astro-cid-zv66lnlj> <!-- Controles del Carrusel --> <div class="flex justify-center mb-6 space-x-4" data-astro-cid-zv66lnlj> <button class="categoria-btn active bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-300" data-categoria="liquidez" data-astro-cid-zv66lnlj>
+Liquidez
+</button> <button class="categoria-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-categoria="endeudamiento" data-astro-cid-zv66lnlj>
+Endeudamiento
+</button> </div> <!-- Contenido del Carrusel --> <div class="categorias-content" data-astro-cid-zv66lnlj> <!-- Categoría Liquidez --> <div id="liquidez" class="categoria-item active" data-astro-cid-zv66lnlj> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-astro-cid-zv66lnlj> <!-- Fondo de Maniobra --> <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200 shadow-sm" data-astro-cid-zv66lnlj> <div class="flex items-center justify-between mb-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Fondo de Maniobra
+</h4> <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded" data-astro-cid-zv66lnlj>Excelente</span> </div> <div class="text-3xl font-bold text-green-600 mb-2" data-astro-cid-zv66lnlj>
+$106.400M
+</div> <div class="text-sm text-gray-600 mb-4" data-astro-cid-zv66lnlj> <div class="font-medium" data-astro-cid-zv66lnlj>Fórmula:</div> <div data-astro-cid-zv66lnlj>Activo Corriente - Pasivo Corriente</div> </div> <div class="bg-white rounded-lg p-3 border" data-astro-cid-zv66lnlj> <div class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Interpretación:</strong> Equilibrio financiero -
+                        La empresa tiene capacidad para operar normalmente
+</div> </div> </div> <!-- Razón Corriente --> <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200 shadow-sm" data-astro-cid-zv66lnlj> <div class="flex items-center justify-between mb-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Razón Corriente
+</h4> <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded" data-astro-cid-zv66lnlj>Óptimo</span> </div> <div class="text-3xl font-bold text-blue-600 mb-2" data-astro-cid-zv66lnlj>
+2.465
+</div> <div class="text-sm text-gray-600 mb-4" data-astro-cid-zv66lnlj> <div class="font-medium" data-astro-cid-zv66lnlj>Fórmula:</div> <div data-astro-cid-zv66lnlj>Activo Corriente / Pasivo Corriente</div> </div> <div class="bg-white rounded-lg p-3 border" data-astro-cid-zv66lnlj> <div class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Interpretación:</strong> Excelente capacidad para
+                        cumplir con obligaciones a corto plazo
+</div> </div> </div> <!-- Prueba Ácida --> <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200 shadow-sm" data-astro-cid-zv66lnlj> <div class="flex items-center justify-between mb-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Prueba Ácida
+</h4> <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded" data-astro-cid-zv66lnlj>Excelente</span> </div> <div class="text-3xl font-bold text-purple-600 mb-2" data-astro-cid-zv66lnlj>
+2.465
+</div> <div class="text-sm text-gray-600 mb-4" data-astro-cid-zv66lnlj> <div class="font-medium" data-astro-cid-zv66lnlj>Fórmula:</div> <div data-astro-cid-zv66lnlj>
+(Activo Corriente - Inventario) / Pasivo Corriente
+</div> </div> <div class="bg-white rounded-lg p-3 border" data-astro-cid-zv66lnlj> <div class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Interpretación:</strong> Excelente capacidad para
+                        cumplir obligaciones sin depender de inventarios
+</div> </div> </div> </div> </div> <!-- Categoría Endeudamiento --> <div id="endeudamiento" class="categoria-item hidden" data-astro-cid-zv66lnlj> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <!-- Endeudamiento Total --> <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200 shadow-sm" data-astro-cid-zv66lnlj> <div class="flex items-center justify-between mb-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Endeudamiento Total
+</h4> <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded" data-astro-cid-zv66lnlj>Conservador</span> </div> <div class="text-3xl font-bold text-orange-600 mb-2" data-astro-cid-zv66lnlj>
+45.705%
+</div> <div class="text-sm text-gray-600 mb-4" data-astro-cid-zv66lnlj> <div class="font-medium" data-astro-cid-zv66lnlj>Fórmula:</div> <div data-astro-cid-zv66lnlj>(Pasivo Total / Activo Total) × 100</div> </div> <div class="bg-white rounded-lg p-3 border" data-astro-cid-zv66lnlj> <div class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Interpretación:</strong> Las deudas no superan los
+                        activos
+</div> </div> </div> <!-- Endeudamiento Corto Plazo --> <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 border border-red-200 shadow-sm" data-astro-cid-zv66lnlj> <div class="flex items-center justify-between mb-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Endeudamiento Corto Plazo
+</h4> <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded" data-astro-cid-zv66lnlj>Moderado</span> </div> <div class="text-3xl font-bold text-red-600 mb-2" data-astro-cid-zv66lnlj>
+60.5%
+</div> <div class="text-sm text-gray-600 mb-4" data-astro-cid-zv66lnlj> <div class="font-medium" data-astro-cid-zv66lnlj>Fórmula:</div> <div data-astro-cid-zv66lnlj>(Pasivo Corriente / Patrimonio) × 100</div> </div> <div class="bg-white rounded-lg p-3 border" data-astro-cid-zv66lnlj> <div class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Interpretación:</strong> Alto poder de negociación
+                        a corto plazo
+</div> </div> </div> <!-- Endeudamiento Largo Plazo --> <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 border border-teal-200 shadow-sm" data-astro-cid-zv66lnlj> <div class="flex items-center justify-between mb-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Endeudamiento Largo Plazo
+</h4> <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded" data-astro-cid-zv66lnlj>Excelente</span> </div> <div class="text-3xl font-bold text-teal-600 mb-2" data-astro-cid-zv66lnlj>
+0.237
+</div> <div class="text-sm text-gray-600 mb-4" data-astro-cid-zv66lnlj> <div class="font-medium" data-astro-cid-zv66lnlj>Fórmula:</div> <div data-astro-cid-zv66lnlj>Pasivo No Corriente / Patrimonio</div> </div> <div class="bg-white rounded-lg p-3 border" data-astro-cid-zv66lnlj> <div class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Interpretación:</strong> Excelente solvencia a largo
+                        plazo
+</div> </div> </div> <!-- Apalancamiento Total --> <div class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-6 border border-cyan-200 shadow-sm" data-astro-cid-zv66lnlj> <div class="flex items-center justify-between mb-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Apalancamiento Total
+</h4> <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded" data-astro-cid-zv66lnlj>Favorable</span> </div> <div class="text-3xl font-bold text-cyan-600 mb-2" data-astro-cid-zv66lnlj>
+0.842
+</div> <div class="text-sm text-gray-600 mb-4" data-astro-cid-zv66lnlj> <div class="font-medium" data-astro-cid-zv66lnlj>Fórmula:</div> <div data-astro-cid-zv66lnlj>Pasivo Total / Patrimonio</div> </div> <div class="bg-white rounded-lg p-3 border" data-astro-cid-zv66lnlj> <div class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Interpretación:</strong> Capacidad de cobertura de
+                        obligaciones con terceros
+</div> </div> </div> </div> </div> </div> </div> <!-- Estrategias Sugeridas --> <div class="bg-yellow-50 rounded-xl p-6 border-l-4 border-yellow-500 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+🚀 Plan de Acción Recomendado
+</h4> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <h5 class="font-semibold text-gray-700 mb-3" data-astro-cid-zv66lnlj>
+Acciones Inmediatas (Próximos 3 meses)
+</h5> <ul class="space-y-2 text-sm text-gray-600" data-astro-cid-zv66lnlj> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-yellow-500 mr-2 mt-1" data-astro-cid-zv66lnlj>•</span> <span data-astro-cid-zv66lnlj>Destinar parte del efectivo a desarrollo de nuevos
+                      productos</span> </li> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-yellow-500 mr-2 mt-1" data-astro-cid-zv66lnlj>•</span> <span data-astro-cid-zv66lnlj>Evaluar reemplazo del vehículo por activos más
+                      productivos</span> </li> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-yellow-500 mr-2 mt-1" data-astro-cid-zv66lnlj>•</span> <span data-astro-cid-zv66lnlj>Establecer fondo para investigación y desarrollo
+                      tecnológico</span> </li> </ul> </div> <div data-astro-cid-zv66lnlj> <h5 class="font-semibold text-gray-700 mb-3" data-astro-cid-zv66lnlj>
+Estrategias Mediano Plazo (3-12 meses)
+</h5> <ul class="space-y-2 text-sm text-gray-600" data-astro-cid-zv66lnlj> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-yellow-500 mr-2 mt-1" data-astro-cid-zv66lnlj>•</span> <span data-astro-cid-zv66lnlj>Explorar financiamiento para proyectos de expansión</span> </li> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-yellow-500 mr-2 mt-1" data-astro-cid-zv66lnlj>•</span> <span data-astro-cid-zv66lnlj>Invertir en capacitación del equipo humano</span> </li> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-yellow-500 mr-2 mt-1" data-astro-cid-zv66lnlj>•</span> <span data-astro-cid-zv66lnlj>Desarrollar líneas de productos con ingresos recurrentes</span> </li> </ul> </div> </div> </div> <!-- Conclusión General --> <div class="text-center bg-gradient-to-r from-green-100 to-blue-100 rounded-xl p-6" data-astro-cid-zv66lnlj> <div class="inline-flex items-center bg-white text-green-800 px-6 py-3 rounded-full mb-3 shadow-sm" data-astro-cid-zv66lnlj> <span class="text-2xl mr-2" data-astro-cid-zv66lnlj>🏆</span> <span class="text-lg font-bold" data-astro-cid-zv66lnlj>SITUACIÓN FINANCIERA DESTACADA</span> </div> <p class="text-gray-700 max-w-2xl mx-auto font-medium" data-astro-cid-zv66lnlj>
+La empresa demuestra solidez financiera excepcional con amplia
+              capacidad de maniobra. El desafío principal consiste en
+              transformar la estabilidad actual en crecimiento acelerado
+              mediante inversiones estratégicas que maximicen el retorno sobre
+              los recursos disponibles.
+</p> </div> </div> </div> <div id="estado-resultados" class="carousel-item hidden" data-astro-cid-zv66lnlj> <!-- Botón para ver Estado de Resultados --> <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+Estado de Resultados - 31 de Agosto 2025
+</h3> <p class="text-gray-600 mb-6" data-astro-cid-zv66lnlj>
+Consulta el Estado de Resultados completo de IngenieriaProg
+</p> <button id="erButton" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg flex items-center justify-center mx-auto space-x-3" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" data-astro-cid-zv66lnlj></path> </svg> <span data-astro-cid-zv66lnlj>Ver Estado de Resultados Completo</span> </button> </div> <!-- Modal específico para Estado de Resultados --> <div id="erModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4" data-astro-cid-zv66lnlj> <div class="bg-white rounded-lg w-full max-w-6xl max-h-[95vh] overflow-auto relative" data-astro-cid-zv66lnlj> <!-- Header del Modal con Botón Cerrar --> <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Estado de Resultados - IngenieriaProg
+</h3> <button id="closeErModal" class="text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-2 transition duration-200" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-zv66lnlj></path> </svg> </button> </div> <!-- Contenido del Modal --> <div class="p-6" data-astro-cid-zv66lnlj> <img src="/Ingenieria_Prog.github.io/estadoresul.png" alt="Estado de Resultados de IngenieriaProg" class="w-full h-auto rounded-lg border border-gray-200" data-astro-cid-zv66lnlj> <!-- Información adicional --> <div class="mt-6 bg-gray-50 rounded-lg p-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-semibold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+Información del Reporte
+</h4> <div class="grid grid-cols-2 gap-4 text-sm text-gray-600" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Fecha:</span> 31 de Agosto 2025
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Moneda:</span> Pesos Colombianos (COP)
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Empresa:</span> IngenieriaProg SAS
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Estado:</span> Consolidado
+</div> </div> </div> </div> </div> </div> <!-- Resto del contenido del Estado de Resultados... --> <div class="bg-white rounded-2xl shadow-xl p-8" data-astro-cid-zv66lnlj> <h3 class="text-3xl font-bold text-center text-gray-800 mb-8" data-astro-cid-zv66lnlj>
+NOTAS RESUMIDAS - ESTADO DE RESULTADOS
+</h3> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <!-- Columna 1 --> <div class="space-y-6" data-astro-cid-zv66lnlj> <!-- Nota 1 --> <div class="bg-green-50 rounded-xl p-4 border-l-4 border-green-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+💰 Ingresos Operacionales
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$30.000.000 - Contratos de desarrollo de software con Grupo
+                  Empresarial Andino S.A.S.
+</p> </div> <!-- Nota 2 --> <div class="bg-red-50 rounded-xl p-4 border-l-4 border-red-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+💸 Costos de Ventas
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$33.650.000 - Salarios equipo desarrollo, licencias y
+                  servidores en la nube
+</p> </div> <!-- Nota 3 --> <div class="bg-orange-50 rounded-xl p-4 border-l-4 border-orange-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🏢 Gastos Administración
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$3.965.000 - Salarios administrativos, arrendamiento y
+                  servicios públicos
+</p> </div> <!-- Nota 4 --> <div class="bg-purple-50 rounded-xl p-4 border-l-4 border-purple-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📊 Gastos Ventas y Mercadeo
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$2.500.000 - Publicidad digital, material promocional y
+                  comisiones
+</p> </div> <!-- Nota 5 --> <div class="bg-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🏦 Gastos Financieros
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$3.200.000 - Intereses por pagarés y comisiones bancarias
+</p> </div> <!-- Nota 6 --> <div class="bg-teal-50 rounded-xl p-4 border-l-4 border-teal-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🎯 Otros Ingresos
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$4.500.000 - Capacitaciones e intereses ganados en cuentas
+</p> </div> <!-- Nota 7 --> <div class="bg-blue-50 rounded-xl p-4 border-l-4 border-blue-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📝 Impuesto de Renta
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$3.439.333 - Calculado sobre utilidad antes de impuestos (35%)
+</p> </div> </div> <!-- Columna 2 --> <div class="space-y-6" data-astro-cid-zv66lnlj> <!-- Nota 8 --> <div class="bg-indigo-50 rounded-xl p-4 border-l-4 border-indigo-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🔧 Ingresos por Soporte
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$20.000.000 - Contratos de mantenimiento con clientes
+                  existentes
+</p> </div> <!-- Nota 9 --> <div class="bg-pink-50 rounded-xl p-4 border-l-4 border-pink-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📈 Ingresos Diferidos
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$9.250.000 - Entrega parcial contrato página web Ferretería El
+                  Progreso
+</p> </div> <!-- Nota 10 --> <div class="bg-lime-50 rounded-xl p-4 border-l-4 border-lime-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🔬 Investigación y Desarrollo
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$5.500.000 - IA para chatbots e integración plataformas de
+                  pago
+</p> </div> <!-- Nota 11 --> <div class="bg-amber-50 rounded-xl p-4 border-l-4 border-amber-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🎓 Gastos de Capacitación
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$2.800.000 - Cursos AWS Cloud Computing y Scrum Master
+</p> </div> <!-- Nota 12 --> <div class="bg-emerald-50 rounded-xl p-4 border-l-4 border-emerald-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+⚖️ Gastos Legales
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$3.600.000 - Auditoría externa y asesoría jurídica
+</p> </div> <!-- Nota 13 --> <div class="bg-rose-50 rounded-xl p-4 border-l-4 border-rose-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📉 Depreciaciones
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$708.333 - Equipos cómputo, mobiliario y licencias software
+</p> </div> <!-- Nota 14 --> <div class="bg-violet-50 rounded-xl p-4 border-l-4 border-violet-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+🎁 Ingresos Extraordinarios
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$2.000.000 - Venta equipos cómputo antiguos
+</p> </div> <!-- Nota 15 --> <div class="bg-cyan-50 rounded-xl p-4 border-l-4 border-cyan-500" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+📊 Resultado Integral
+</h4> <p class="text-gray-600 text-sm" data-astro-cid-zv66lnlj>
+$638.733 - Reserva legal del 10% sobre utilidad líquida
+</p> </div> </div> </div> <!-- Resumen de Rentabilidad --> <div class="mt-8 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-200" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4 text-center" data-astro-cid-zv66lnlj>
+📈 Resumen de Rentabilidad
+</h4> <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-green-600" data-astro-cid-zv66lnlj>$65.750M</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Ingresos Totales</div> </div> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-blue-600" data-astro-cid-zv66lnlj>$13.027M</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Utilidad Operativa</div> </div> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-purple-600" data-astro-cid-zv66lnlj>$6.388M</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Utilidad Líquida</div> </div> <div data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-orange-600" data-astro-cid-zv66lnlj>$5.749M</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Utilidad Neta</div> </div> </div> </div> </div> </div> <div id="analisis-resultados" class="carousel-item hidden" data-astro-cid-zv66lnlj> <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+Análisis Vertical Estado de Resultados - 31 de Agosto 2025
+</h3> <p class="text-gray-600 mb-6" data-astro-cid-zv66lnlj>
+Consulta el Análisis vertical completo de IngenieriaProg
+</p> <button id="avErButton" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition duration-300 font-semibold text-lg flex items-center justify-center mx-auto space-x-3" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" data-astro-cid-zv66lnlj></path> </svg> <span data-astro-cid-zv66lnlj>Ver Análisis vertical de ER Completo</span> </button> </div> <!-- Modal específico para Análisis Vertical Estado de Resultados --> <div id="avErModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4" data-astro-cid-zv66lnlj> <div class="bg-white rounded-lg w-full max-w-6xl max-h-[95vh] overflow-auto relative" data-astro-cid-zv66lnlj> <!-- Header del Modal con Botón Cerrar --> <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10" data-astro-cid-zv66lnlj> <h3 class="text-2xl font-bold text-gray-800" data-astro-cid-zv66lnlj>
+Análisis vertical y Diagnóstico Financiero del Estado de Resultados - IngenieriaProg
+</h3> <button id="closeAvErModal" class="text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-2 transition duration-200" data-astro-cid-zv66lnlj> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-zv66lnlj> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-zv66lnlj></path> </svg> </button> </div> <!-- Contenido del Modal --> <div class="p-6" data-astro-cid-zv66lnlj> <img src="/Ingenieria_Prog.github.io/estadoresulav.png" alt="Análisis vertical de Estado de Resultados de IngenieriaProg" class="w-full h-auto rounded-lg border border-gray-200" data-astro-cid-zv66lnlj> <!-- Información adicional --> <div class="mt-6 bg-gray-50 rounded-lg p-4" data-astro-cid-zv66lnlj> <h4 class="text-lg font-semibold text-gray-800 mb-2" data-astro-cid-zv66lnlj>
+Información del Reporte
+</h4> <div class="grid grid-cols-2 gap-4 text-sm text-gray-600" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Fecha:</span> 31 de Agosto 2025
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Moneda:</span> Pesos Colombianos (COP)
+</div> <div data-astro-cid-zv66lnlj> <span class="font-medium" data-astro-cid-zv66lnlj>Empresa:</span> IngenieriaProg SAS
+</div> </div> </div> </div> </div> </div> <div class="bg-white rounded-2xl shadow-xl p-8" data-astro-cid-zv66lnlj> <h3 class="text-3xl font-bold text-center text-gray-800 mb-8" data-astro-cid-zv66lnlj>
+Análisis Vertical y Diagnóstico Financiero del Estado de Resultados
+</h3> <!-- Resumen Ejecutivo --> <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-200 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4 text-center" data-astro-cid-zv66lnlj>
+📊  Panorama Financiero General
+</h4> <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center" data-astro-cid-zv66lnlj> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-orange-600" data-astro-cid-zv66lnlj>90.11%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Ingresos Operacionales</div> <div class="text-xs text-orange-500 mt-1" data-astro-cid-zv66lnlj>
+Actividad Principal
+</div> </div> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-green-600" data-astro-cid-zv66lnlj>48.82%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Utilidad Bruto</div> <div class="text-xs text-green-500 mt-1" data-astro-cid-zv66lnlj>
+Alta Rentabilidad
+</div> </div> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-blue-600" data-astro-cid-zv66lnlj>19.81%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Utilidad Operativa</div> <div class="text-xs text-blue-500 mt-1" data-astro-cid-zv66lnlj>Eficiencia Operacional</div> </div> <div class="bg-white rounded-lg p-4 shadow-sm" data-astro-cid-zv66lnlj> <div class="text-2xl font-bold text-purple-600" data-astro-cid-zv66lnlj>8.74%</div> <div class="text-sm text-gray-600" data-astro-cid-zv66lnlj>Utilidad Neta</div> <div class="text-xs text-purple-500 mt-1" data-astro-cid-zv66lnlj>
+Promedio del Sector
+</div> </div> </div> </div> <!-- Estructura de Ingresos --> <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>
+💰 Estructura de Ingresos
+</h4> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <ul class="space-y-3 text-gray-700" data-astro-cid-zv66lnlj> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-2 font-bold" data-astro-cid-zv66lnlj>45.63%</span> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Ingresos Operacionales:</strong> Base principal del negocio en desarrollo de software</span> </li> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-2 font-bold" data-astro-cid-zv66lnlj>30.42%</span> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Soporte y Mantenimiento:</strong> Estabilidad en contratos continuos</span> </li> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-2 font-bold" data-astro-cid-zv66lnlj>14.07%</span> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Ingresos Diferidos:</strong> Continuidad de servicios ejecutados</span> </li> </ul> </div> <div data-astro-cid-zv66lnlj> <ul class="space-y-3 text-gray-700" data-astro-cid-zv66lnlj> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-2 font-bold" data-astro-cid-zv66lnlj>6.84%</span> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Otros Ingresos:</strong> Complementarios sin dependencia</span> </li> <li class="flex items-start" data-astro-cid-zv66lnlj> <span class="text-blue-500 mr-2 font-bold" data-astro-cid-zv66lnlj>3.04%</span> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Extraordinarios:</strong> Sin dependencia externa</span> </li> <li class="flex items-start bg-green-100 p-2 rounded" data-astro-cid-zv66lnlj> <span class="text-green-700 mr-2 font-bold text-lg" data-astro-cid-zv66lnlj>90.11%</span> <span class="text-green-700 font-semibold" data-astro-cid-zv66lnlj>Total Actividad Principal - Coherencia y sostenibilidad</span> </li> </ul> </div> </div> </div> <!-- Gastos Operacionales --> <div class="bg-orange-50 rounded-xl p-6 border-l-4 border-orange-500 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>⚙️ Control de Gastos Operacionales</h4> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <ul class="space-y-3 text-gray-700" data-astro-cid-zv66lnlj> <li class="flex justify-between items-center bg-white p-3 rounded" data-astro-cid-zv66lnlj> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Gastos Administrativos</strong></span> <span class="text-orange-600 font-bold" data-astro-cid-zv66lnlj>6.03%</span> </li> <li class="flex justify-between items-center bg-white p-3 rounded" data-astro-cid-zv66lnlj> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Ventas y Mercadeo</strong></span> <span class="text-orange-600 font-bold" data-astro-cid-zv66lnlj>3.80%</span> </li> <li class="flex justify-between items-center bg-white p-3 rounded" data-astro-cid-zv66lnlj> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Gastos Financieros</strong></span> <span class="text-orange-600 font-bold" data-astro-cid-zv66lnlj>4.87%</span> </li> </ul> </div> <div data-astro-cid-zv66lnlj> <ul class="space-y-3 text-gray-700" data-astro-cid-zv66lnlj> <li class="flex justify-between items-center bg-white p-3 rounded" data-astro-cid-zv66lnlj> <span data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Investigación y Desarrollo</strong></span> <span class="text-purple-600 font-bold" data-astro-cid-zv66lnlj>12.62%</span> </li> <li class="bg-blue-100 p-3 rounded" data-astro-cid-zv66lnlj> <p class="text-sm text-gray-700" data-astro-cid-zv66lnlj> <strong data-astro-cid-zv66lnlj>Análisis:</strong> Gastos administrativos y de ventas en rangos razonables. 
+                      Gastos financieros reducidos reflejan bajo endeudamiento. Inversión en I+D evidencia 
+                      orientación hacia la innovación.
+</p> </li> </ul> </div> </div> </div> <!-- Recomendaciones Estratégicas --> <div class="bg-yellow-50 rounded-xl p-6 border-l-4 border-yellow-500 mb-8" data-astro-cid-zv66lnlj> <h4 class="text-xl font-bold text-gray-800 mb-4" data-astro-cid-zv66lnlj>🎯 Recomendaciones Estratégicas</h4> <div class="grid md:grid-cols-2 gap-6" data-astro-cid-zv66lnlj> <div data-astro-cid-zv66lnlj> <ol class="space-y-3 text-gray-700 list-decimal list-inside" data-astro-cid-zv66lnlj> <li data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Incrementar inversión en I+D e innovación</strong> para potenciar crecimiento futuro</li> <li data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Ampliar marketing digital y posicionamiento</strong> de marca en el mercado</li> </ol> </div> <div data-astro-cid-zv66lnlj> <ol class="space-y-3 text-gray-700 list-decimal list-inside" start="3" data-astro-cid-zv66lnlj> <li data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Reforzar programas de capacitación</strong> técnica y comercial del equipo</li> <li data-astro-cid-zv66lnlj><strong data-astro-cid-zv66lnlj>Evaluar financiamiento estratégico</strong> para nuevos proyectos sin comprometer estabilidad</li> </ol> </div> </div> </div> <!-- Controles del Carrusel de Indicadores --> <div class="flex justify-center mb-8 space-x-4" data-astro-cid-zv66lnlj> <button class="indicador-btn active bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-300" data-target="eficiencia-indicadores" data-astro-cid-zv66lnlj>
+Eficiencia
+</button> <button class="indicador-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-400 transition duration-300" data-target="rentabilidad-indicadores" data-astro-cid-zv66lnlj>
+Rentabilidad
+</button> </div> <!-- Contenido del Carrusel de Indicadores --> <div class="indicadores-carrusel-content" data-astro-cid-zv66lnlj> <!-- Indicadores de Eficiencia --> <div id="eficiencia-indicadores" class="indicador-item active" data-astro-cid-zv66lnlj> <div class="py-12 px-6 rounded-2xl shadow-lg mb-8 bg-blue-50 text-blue-800 border-l-4 border-blue-500" data-astro-cid-zv66lnlj> <h3 class="text-3xl font-bold text-center mb-4" data-astro-cid-zv66lnlj>Gestión o Eficiencia</h3> <p class="text-lg text-center mb-8 max-w-2xl mx-auto opacity-90" data-astro-cid-zv66lnlj>
+Mide la capacidad de la empresa para utilizar sus activos y gestionar sus operaciones de manera efectiva.
+</p> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-astro-cid-zv66lnlj> <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>Índice de Rotación</h4> <div class="text-3xl font-bold mb-4 text-blue-600" data-astro-cid-zv66lnlj> 0.29 </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>La empresa presenta una gestión operativa estable, con un nivel de utilización de activos que, aunque moderado, refleja orden y capacidad para generar ventas de forma sostenida.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Gestión o Eficiencia
+</div> </div><div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>Rotación de Cartera</h4> <div class="text-3xl font-bold mb-4 text-blue-600" data-astro-cid-zv66lnlj> 1.04 </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>La cartera rota aproximadamente cada 347 días, evidenciando una gestión de cobro constante, con oportunidad de agilizar los plazos para fortalecer la liquidez.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Gestión o Eficiencia
+</div> </div><div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>Rotación de Proveedores</h4> <div class="text-3xl font-bold mb-4 text-blue-600" data-astro-cid-zv66lnlj> 0.46 </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>La empresa paga a sus proveedores en promedio cada 151 días, lo que demuestra una administración financiera prudente y manejo de plazos que favorecen la liquidez operativa.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Gestión o Eficiencia
+</div> </div><div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>Inventario de Existencias</h4> <div class="text-3xl font-bold mb-4 text-blue-600" data-astro-cid-zv66lnlj> 0.00 </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>Este indicador no aplica, ya que la empresa no maneja inventarios físicos por dedicarse al desarrollo de software y servicios tecnológicos.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Gestión o Eficiencia
+</div> </div> </div> </div> </div> <!-- Indicadores de Rentabilidad --> <div id="rentabilidad-indicadores" class="indicador-item hidden" data-astro-cid-zv66lnlj> <div class="py-12 px-6 rounded-2xl shadow-lg mb-8 bg-orange-50 text-orange-800 border-l-4 border-orange-500" data-astro-cid-zv66lnlj> <h3 class="text-3xl font-bold text-center mb-4" data-astro-cid-zv66lnlj>Rentabilidad</h3> <p class="text-lg text-center mb-8 max-w-2xl mx-auto opacity-90" data-astro-cid-zv66lnlj>
+Evalúa la capacidad de la empresa para generar ganancias a partir de sus ventas y activos.
+</p> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-astro-cid-zv66lnlj> <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>Margen de Utilidad Bruta</h4> <div class="text-3xl font-bold mb-4 text-orange-600" data-astro-cid-zv66lnlj> 47.22% </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>Por cada $100 vendidos, la empresa obtiene $47.22 de utilidad bruta, lo que refleja buena eficiencia en costos de producción y control de gastos directos.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Rentabilidad
+</div> </div><div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>Margen de Utilidad Neta</h4> <div class="text-3xl font-bold mb-4 text-orange-600" data-astro-cid-zv66lnlj> 9.02% </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>La empresa mantiene ganancias positivas, generando $9.02 de utilidad neta por cada $100 vendidos, lo que muestra solidez operativa y resultados sostenibles.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Rentabilidad
+</div> </div><div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>ROA (Return on Assets)</h4> <div class="text-3xl font-bold mb-4 text-orange-600" data-astro-cid-zv66lnlj> 2.60% </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>Por cada peso invertido en activos, la empresa genera $0.026 de utilidad neta, demostrando capacidad de los recursos para generar beneficios.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Rentabilidad
+</div> </div><div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>ROE (Return on Equity)</h4> <div class="text-3xl font-bold mb-4 text-orange-600" data-astro-cid-zv66lnlj> 4.79% </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>La rentabilidad del patrimonio refleja crecimiento y estabilidad, evidenciando que la empresa genera valor a los socios y mantiene un manejo financiero conservador.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Rentabilidad
+</div> </div><div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-gray-100" data-astro-cid-zv66lnlj> <div class="text-center" data-astro-cid-zv66lnlj> <h4 class="text-lg font-bold text-gray-800 mb-3" data-astro-cid-zv66lnlj>Rentabilidad sobre Ventas</h4> <div class="text-3xl font-bold mb-4 text-orange-600" data-astro-cid-zv66lnlj> 9.02% </div> <p class="text-gray-600 text-sm leading-relaxed text-left" data-astro-cid-zv66lnlj>Los beneficios netos representan el 9.02% de las ventas, un nivel positivo y competitivo dentro del sector, resultado de una gestión eficiente y un control adecuado de los gastos.</p> </div> <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center" data-astro-cid-zv66lnlj>
+Rentabilidad
+</div> </div> </div> </div> </div> </div> <!-- Conclusión del Diagnóstico --> <div class="text-center bg-gradient-to-r from-green-100 to-blue-100 rounded-xl p-6" data-astro-cid-zv66lnlj> <div class="inline-flex items-center bg-white text-green-800 px-6 py-3 rounded-full mb-3 shadow-sm" data-astro-cid-zv66lnlj> <span class="text-2xl mr-2" data-astro-cid-zv66lnlj>🏆</span> <span class="text-lg font-bold" data-astro-cid-zv66lnlj>EMPRESA SÓLIDA Y RENTABLE</span> </div> <p class="text-gray-700 max-w-3xl mx-auto font-medium" data-astro-cid-zv66lnlj>
+INGENIERIAPROG S.A.S. se distingue por su rentabilidad, eficiencia en costos y adecuada 
+              gestión administrativa. La empresa ha consolidado un modelo financiero estable, basado en 
+              el aprovechamiento de sus recursos humanos y tecnológicos, con excelente posición competitiva 
+              y proyección de crecimiento sostenido.
+</p> </div> </div> </div> </div> </div> <script type="module">function l(i){const d=document.getElementById(i);d&&(d.classList.remove("hidden"),document.body.style.overflow="hidden")}function n(i){const d=document.getElementById(i);d&&(d.classList.add("hidden"),document.body.style.overflow="auto")}document.addEventListener("DOMContentLoaded",function(){const i=document.getElementById("balanceButton"),d=document.getElementById("avButton"),r=document.getElementById("erButton"),u=document.getElementById("avErButton");i&&i.addEventListener("click",()=>l("imageModal")),d&&d.addEventListener("click",()=>l("avModal")),r&&r.addEventListener("click",()=>l("erModal")),u&&u.addEventListener("click",()=>l("avErModal"));const g=document.getElementById("closeModal"),m=document.getElementById("closeAvModal"),v=document.getElementById("closeErModal"),f=document.getElementById("closeAvErModal");g&&g.addEventListener("click",()=>n("imageModal")),m&&m.addEventListener("click",()=>n("avModal")),v&&v.addEventListener("click",()=>n("erModal")),f&&f.addEventListener("click",()=>n("avErModal")),document.addEventListener("keydown",function(e){e.key==="Escape"&&(n("imageModal"),n("avModal"),n("erModal"),n("avErModal"))});const E=document.getElementById("imageModal"),L=document.getElementById("avModal"),y=document.getElementById("erModal"),M=document.getElementById("avErModal");E&&E.addEventListener("click",function(e){e.target===this&&n("imageModal")}),L&&L.addEventListener("click",function(e){e.target===this&&n("avModal")}),y&&y.addEventListener("click",function(e){e.target===this&&n("erModal")}),M&&M.addEventListener("click",function(e){e.target===this&&n("avErModal")});const B=document.querySelectorAll(".carousel-btn"),k=document.querySelectorAll(".carousel-item");B.forEach(function(e){e.addEventListener("click",function(s){const a=s.currentTarget;if(!a)return;const o=a.getAttribute("data-target");if(!o)return;B.forEach(function(c){c.classList.remove("active","bg-blue-600","text-white"),c.classList.add("bg-gray-300","text-gray-700")}),k.forEach(function(c){c.classList.add("hidden"),c.classList.remove("active")}),a.classList.remove("bg-gray-300","text-gray-700"),a.classList.add("active","bg-blue-600","text-white");const t=document.getElementById(o);t&&(t.classList.remove("hidden"),t.classList.add("active"))})});const b=document.querySelectorAll(".categoria-btn"),I=document.querySelectorAll(".categoria-item");b.forEach(function(e){e.addEventListener("click",function(s){const a=s.currentTarget;if(!a)return;const o=a.getAttribute("data-categoria");if(b.forEach(t=>{t.classList.remove("active","bg-blue-600","text-white"),t.classList.add("bg-gray-300","text-gray-700")}),I.forEach(t=>{t.classList.add("hidden"),t.classList.remove("active")}),a.classList.remove("bg-gray-300","text-gray-700"),a.classList.add("active","bg-blue-600","text-white"),o){const t=document.getElementById(o);t&&(t.classList.remove("hidden"),t.classList.add("active"))}})});const h=document.querySelectorAll(".indicador-btn"),x=document.querySelectorAll(".indicador-item");h.forEach(function(e){e.addEventListener("click",function(s){const a=s.currentTarget;if(!a)return;const o=a.getAttribute("data-target");if(!o)return;h.forEach(function(c){c.classList.remove("active","bg-blue-600","bg-orange-600","text-white"),c.classList.add("bg-gray-300","text-gray-700")}),x.forEach(function(c){c.classList.add("hidden"),c.classList.remove("active")}),a.classList.remove("bg-gray-300","text-gray-700"),o==="eficiencia-indicadores"?a.classList.add("active","bg-blue-600","text-white"):o==="rentabilidad-indicadores"&&a.classList.add("active","bg-orange-600","text-white");const t=document.getElementById(o);t&&(t.classList.remove("hidden"),t.classList.add("active"))})})});</script>   </main> <footer class="bg-white/80 backdrop-blur-xl border-t border-gray-200 py-6"> <div class="max-w-7xl mx-auto px-6 text-center text-gray-600"> <p>&copy; 2024 IngenieriaProg. Todos los derechos reservados.</p> </div> </footer> </html>
